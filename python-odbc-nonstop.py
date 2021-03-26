@@ -1,6 +1,6 @@
 import pyodbc
 
-conn = pyodbc.connect('DSN=[CATALOG NAME];UID=[USER];PWD=[PASSWORD]')
+conn = pyodbc.connect('DSN=[DATA SOURCE NAME];UID=[USER];PWD=[PASSWORD]')
 
 conn.setdecoding(pyodbc.SQL_CHAR, encoding='iso-8859-1')
 conn.setdecoding(pyodbc.SQL_WCHAR, encoding='iso-8859-1')
